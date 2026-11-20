@@ -30,7 +30,7 @@
 This guide is only for the Intel version of the Lenovo ThinkPad T14 Gen 1. I am NOT responsible for any harm you cause to your device. This guide is provided "as-is" and all steps taken are done at your own risk.
 
 ## 🎧 Master Twins 🥋
-This ThinkPad T14 Gen 1 EFI repo has been brought to you by **Master Twins**! We are an Open Format / Unified style DJ Group to elevate your next event in order to make it an unforgettable experience! We play everything from 80s and 90s classic rock, to Hip-Hop, Recession Pop, House, Trance, Techno, EDM, and more! To book us, click the link above! ⬆️
+This ThinkPad T14 Gen 1 EFI repo has been brought to you by **Master Twins**! We are an Open Format / Unified style DJ Group that will elevate your next event in order to make said next event an unforgettable experience! We play everything from 80s and 90s classic rock, to Hip-Hop, Recession Pop, House, Trance, Techno, EDM, and more! To book us, click the link above! ⬆️
 
 &nbsp;
 
