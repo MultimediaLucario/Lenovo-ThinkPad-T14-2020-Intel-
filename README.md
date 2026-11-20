@@ -1,6 +1,7 @@
 # Lenovo ThinkPad T14 Gen 1 (Intel) OpenCore Configuration
 
-<img width="1112" height="480" alt="repository-open-graph-template-T14-G1" src="https://github.com/user-attachments/assets/5de197be-ab09-4762-8ff0-e8f3092e8410" />
+<img width="1112" height="480" alt="repository-open-graph-t14" src="https://github.com/user-attachments/assets/feea50ef-2b7c-48dd-afb6-76f895d6678e" />
+
 
 
 [![macOS](https://img.shields.io/badge/macOS-Ventura-orange.svg)](https://developer.apple.com/documentation/macos-release-notes)
