@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "kind": "acpi",
+  "id": "legion7-16achg6-gkcn",
+  "name": "Lenovo Legion 7 2021 16ACHg6",
+  "sources": [
+    "https://github.com/johnfanv2/LenovoLegionLinux/blob/ff72e4c2b437ec605d5f2e34c5b34111c57c9cc0/kernel_module/legion-laptop.c",
+    "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_7_16ACHg6/Legion_7_16ACHg6_Spec.pdf",
+    "https://github.com/LenovoLegionToolkit-Team/LenovoLegionToolkit/blob/0bb045be29c4fd772ba9887a3507b6a9b0b56d58/LenovoLegionToolkit.Lib/Utils/Compatibility.cs",
+    "https://github.com/LenovoLegionToolkit-Team/LenovoLegionToolkit/blob/0bb045be29c4fd772ba9887a3507b6a9b0b56d58/LenovoLegionToolkit.Lib/Features/BatteryFeature.cs",
+    "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1012794;msg=2"
+  ],
+  "machine_types": [
+    "82N6"
+  ],
+  "bios_families": [
+    "GKCN"
+  ],
+  "oem_table_ids": [
+    "CB-01"
+  ],
+  "validation": "ACPI telemetry and battery commands; manual fan writes disabled",
+  "ec_path": "\\_SB.PCI0.LPC0.EC0",
+  "ec_base": "0xFE00D400",
+  "ec_size": "0x600",
+  "rpm_scale": 100,
+  "offsets": {
+    "fan1_curve": "0x140",
+    "fan2_curve": "0x150",
+    "fan1_rpm": "0x1E0",
+    "fan2_rpm": "0x1E2",
+    "cpu_temp": "0x138",
+    "gpu_temp": "0x139",
+    "update_counter1": "0x1FE",
+    "update_counter2": "0x1FF",
+    "curve_point": "0x134",
+    "curve_size": "0x135",
+    "internal_cpu_level": "0x234",
+    "internal_gpu_level": "0x235",
+    "internal_sensor_level": "0x236"
+  },
+  "required_patterns": [
+    "OEM ID\\s+\\\"LENOVO\\\"",
+    "OperationRegion \\(ERAX, SystemMemory, 0xFE00D400, 0xFF\\)",
+    "Method \\(WMB2, 3, NotSerialized\\)",
+    "Method \\(GBMD, 0, NotSerialized\\)",
+    "Method \\(SBMC, 1, NotSerialized\\)",
+    "QCBX,\\s+1",
+    "QCHO,\\s+1",
+    "BTSM,\\s+1",
+    "CPUT,\\s+8",
+    "GPUT,\\s+8",
+    "FANS,\\s+8",
+    "FA2S,\\s+8",
+    "SPMO,\\s+4"
+  ],
+  "power_mode_field": "SPMO",
+  "curve_points_max": 10,
+  "verified_writes": 0,
+  "fan_command_method": "NCMD",
+  "fan_fullspeed_command": "0x59",
+  "fan_fullspeed_on": "0x70",
+  "fan_fullspeed_off": "0x76",
+  "lighting_owner_field": "LCON",
+  "battery_conservation_mask": 32,
+  "battery_rapidcharge_mask": 4,
+  "battery_conservation_on": 3,
+  "battery_conservation_off": 5,
+  "battery_rapidcharge_on": 7,
+  "battery_rapidcharge_off": 8,
+  "battery_conservation_capability_mask": 0,
+  "battery_rapidcharge_capability_mask": 131072,
+  "battery_mapping_version": 4,
+  "native_telemetry": [
+    {
+      "field": "FANS",
+      "scale": 100
+    },
+    {
+      "field": "FA2S",
+      "scale": 100
+    },
+    {
+      "field": "CPUT",
+      "scale": 1
+    },
+    {
+      "field": "GPUT",
+      "scale": 1
+    }
+  ],
+  "hotkeys": {
+    "id": "legion7-gen6-hotkeys",
+    "keycodes": {
+      "122": "mute",
+      "120": "volumeDown",
+      "99": "volumeUp",
+      "118": "micMute",
+      "96": "brightnessDown",
+      "97": "brightnessUp",
+      "98": "displays",
+      "100": "airplane",
+      "101": "controlCenter",
+      "109": "touchpad",
+      "103": "mission",
+      "111": "calculator"
+    },
+    "requiresFnFlag": true,
+    "consumerUsages": {
+      "402": "calculator",
+      "101": "screenshot"
+    },
+    "printScreenKeycodes": [
+      105
+    ],
+    "notes": "Normal F1-F12 are preserved. Raw Fn fallback requires an observed physical Fn flagsChanged event; the generic function-key modifier is never treated as evidence that Fn is held. Firmware-handled keys use consumer/ACPI paths.",
+    "matchProfiles": [
+      "ite-c968-gen6",
+      "legion7-16achg6-gkcn"
+    ],
+    "physicalFnKeycode": 63,
+    "repeatableActions": [
+      "volumeDown",
+      "volumeUp",
+      "brightnessDown",
+      "brightnessUp"
+    ],
+    "sources": [
+      "https://download.lenovo.com/pccbbs/pubs/legion_7_16_6/html_en/EN/SHARED_feature_intro_hotkeys_legion_7_16.html"
+    ]
+  },
+  "pci_subsystem_ids": [
+    "17aa:3a58"
+  ]
+}
