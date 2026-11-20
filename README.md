@@ -46,5 +46,5 @@ This repo includes multiple EFI configuations for different macOS Versions.
 | `EFI - Ventura`     | Supports macOS Ventura (using Airportitlwm)		                | `Stable`  |
 | `EFI - Sequoia`   | Supports macOS Sequoia (using Airportitlwm)				| `Stable`  |         
 
-> **Note** The Sequoia configuration is still a work in progress as Siri abd video output are still not functional. Use ```EFI - Ventura``` instead for a better experience.
+> **Note** The Sequoia configuration is still a work in progress as both Siri and video output are still not functional. Use ```EFI - Ventura``` instead for a better experience.
 
