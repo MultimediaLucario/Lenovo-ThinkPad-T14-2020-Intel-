@@ -282,7 +282,7 @@ Now you can go through the install.
 <summary><strong>Instructions</strong></summary>
 </br> 
 
-1. Download and install both [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/?doing_wp_cron=1741176165.9179310798645019531250) and [Hackintool](https://github.com/benbaker76/Hackintool/releases). Don't forget to also download and extract the zip folder from this repo as it contains a crucial .pkg file to help fix the interna
+1. Download and install both [OpenCore Configurator](https://mackie100projects.altervista.org/download-opencore-configurator/?doing_wp_cron=1741176165.9179310798645019531250) and [Hackintool](https://github.com/benbaker76/Hackintool/releases). Don't forget to also download and extract the zip folder from this repo.
 2. Open Hackintool, navigate to the ```Sound``` section, then go to the bottom half where it says ```Audio Info```. There, you will find a little drop down menu that is labled ```ALC Layout ID```. Click on the drop down menu and you will find a couple different numbers to choose from. These are the potential audio layout ids that can work for your system. Make sure to keep track of them.
 3. Open OpenCore Configurator, select ```Tools``` up in the menubar, and then select ```Mount EFI```. Go to the EFI partition for your boot drive, click ```Mount Partition```, and enter your macOS password.
 4. Now, go to the menubar, select ```File```, ```Open```, and then Go to the drive that says ```EFI```, open the folder ```EFI```, double click on the ```OC``` folder and the file named ```Config.plist```.
